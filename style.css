@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    font-family:cursive;
+}
+h2{
+    font-family: cursive;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+body{
+    background-color: rgb(233, 242, 244);
+}
+
+button{
+    background-color:azure ;
+}
+table{
+  font-family: arial, sans-serif;
+  border-collapse:collapse;
+  border: solid black;
+  background-color: white;
+  border-style:ridge;
+
+}
+td,th {
+    border-color:black;
+}
+
+#data{
+    position: absolute;
+    display: flex;
+    left: 80%;
+    top: 32px;
+}
+#imagem1{
+    width: 100%;
+    height: auto;
+    top: 75px;
+    left: 700px;
+}
+#imagem2{
+    width: 100%;
+    height: auto;
+    top: 85px;
+    left: 900px;
+}
