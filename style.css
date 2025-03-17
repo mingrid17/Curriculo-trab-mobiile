@@ -1,6 +1,11 @@
+*{
+    margin: 0;
+}
+
 h1{
     text-align: center;
     font-family:cursive;
+    color:rgb(0, 0, 0)
 }
 h2{
     font-family: cursive;
@@ -11,40 +16,45 @@ h2{
     flex-direction: column;
     width: 20vw;
 }
+
 body{
-    background-color: rgb(233, 242, 244);
+    background-color: rgb(35, 76, 85);
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 button{
     background-color:azure ;
 }
-table{
-  font-family: arial, sans-serif;
-  border-collapse:collapse;
-  border: solid black;
-  background-color: white;
-  border-style:ridge;
 
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    height: 525px;
 }
-td,th {
-    border-color:black;
+input {
+    border: none;
+    background:transparent;
+    border-bottom: 1px solid black;
+}
+
+.caixinha{
+    display: flex;
+    justify-content: space-between;
 }
 
 #data{
-    position: absolute;
+    margin-top: 10px;
+}
+
+.malinha{
     display: flex;
-    left: 80%;
-    top: 32px;
-}
-#imagem1{
-    width: 100%;
-    height: auto;
-    top: 75px;
-    left: 700px;
-}
-#imagem2{
-    width: 100%;
-    height: auto;
-    top: 85px;
-    left: 900px;
+    justify-content: space-between;
 }
