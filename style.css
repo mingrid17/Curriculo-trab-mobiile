@@ -1,22 +1,20 @@
 *{
     margin: 0;
 }
-
 h1{
     text-align: center;
     font-family:cursive;
-    color:rgb(0, 0, 0)
+    color:rgb(224, 224, 224)
 }
+
 h2{
     font-family: cursive;
 }
-
 .info{
     display: flex;
     flex-direction: column;
     width: 20vw;
 }
-
 body{
     background-color: rgb(35, 76, 85);
     position: absolute;
@@ -24,11 +22,9 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 button{
     background-color:azure ;
 }
-
 .container{
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -37,24 +33,87 @@ button{
     flex-direction: column;
     gap: 20px;
     width: 400px;
-    height: 525px;
+    height: 420px;
 }
 input {
     border: none;
     background:transparent;
     border-bottom: 1px solid black;
 }
-
 .caixinha{
     display: flex;
     justify-content: space-between;
 }
-
 #data{
     margin-top: 10px;
 }
-
 .malinha{
     display: flex;
     justify-content: space-between;
+}
+
+/* Telas menores que 768px*/
+@media (max-width:768px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    body{
+        top: 40%;
+    }
+
+    .info{
+        width: 50vw;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        font-size: 1rem;
+    }
+
+    .caixinha, .malinha {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*telas menores  que 480px*/
+@media (max-width: 480px) {
+    .container{
+        width: 90%;
+        padding: 10px;
+    }
+
+    body {
+        top:30%;
+    }
+
+    .info {
+        width: 70vw;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+
+    .caixinha, .malinha {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
